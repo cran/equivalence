@@ -1,4 +1,4 @@
-% $Id: pref.LAI.Rd,v 1.2 2005/09/26 02:29:14 andrewr Exp $
+% $Id: pref.LAI.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
 \name{pref.LAI}
 \alias{pref.LAI}
@@ -31,11 +31,11 @@ The data are documented in Duursma et al. (2003) and Robinson et al (2005).
 \references{
 Duursma, R.A., J.D. Marshall, and A.P. Robinson.  2003. Leaf area index
 inferred from solar beam transmission in mixed conifer forests on
-complex terrain. Agricultural and Forest Meteorology 118, 221-236
+complex terrain. Agricultural and Forest Meteorology 118, 221-236.
 
 Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913
+burden of proof. Tree Physiology 25, 903-913.
 }
 \examples{
 data(pref.LAI)

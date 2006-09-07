@@ -1,4 +1,4 @@
-% $Id: pref.4PG.Rd,v 1.4 2005/09/26 07:09:43 andrewr Exp $
+% $Id: pref.4PG.Rd,v 1.5 2005/10/27 10:51:50 andrewr Exp $
 
 \name{pref.4PG}
 \alias{pref.4PG}

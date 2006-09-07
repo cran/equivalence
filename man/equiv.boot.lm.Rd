@@ -1,4 +1,4 @@
-% $Id: equiv.boot.lm.Rd,v 1.5 2005/10/10 10:14:54 andrewr Exp $
+% $Id: equiv.boot.lm.Rd,v 1.6 2006/06/15 02:33:53 andrewr Exp $
 
 \name{equiv.boot.lm}
 \alias{equiv.boot.lm}
@@ -49,7 +49,7 @@ The output is a four-component vector, comprising:
 
 \references{  Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913 }
+burden of proof. Tree Physiology 25, 903-913. }
 
 \author{Andrew Robinson \email{A.Robinson@ms.unimelb.edu.au}}
 

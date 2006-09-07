@@ -1,4 +1,4 @@
-% $Id: ufc.Rd,v 1.2 2005/09/25 12:42:22 andrewr Exp $
+% $Id: ufc.Rd,v 1.3 2006/06/15 02:33:53 andrewr Exp $
 
 \name{ufc}
 \alias{ufc}
@@ -40,7 +40,7 @@ inventory was based on variable radius plots with 6.43 sq. m. per ha. BAF
 \references{
 Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913
+burden of proof. Tree Physiology 25, 903-913.
 
 Wykoff,W.R., N.L. Crookston, and A.R. Stage. 1982. User's guide to the
 stand Prognosis model. GTR-INT 133, USDA Forest Service, Intermountain

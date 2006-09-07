@@ -1,4 +1,4 @@
-% $Id: equivalence.xyplot.Rd,v 1.6 2005/10/10 10:14:54 andrewr Exp $
+% $Id: equivalence.xyplot.Rd,v 1.7 2006/06/15 02:33:53 andrewr Exp $
 
 \name{equivalence.xyplot}
 \alias{equivalence.xyplot}
@@ -72,7 +72,7 @@ Run for its side effect of producing a lattice plot object.
 \references{
   Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913 }
+burden of proof. Tree Physiology 25, 903-913. }
 
 \author{ Andrew Robinson \email{A.Robinson@ms.unimelb.edu.au}}
 

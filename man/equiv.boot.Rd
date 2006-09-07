@@ -1,26 +1,29 @@
-% $Id: equiv.boot.Rd,v 1.3 2005/10/10 10:14:54 andrewr Exp $
+% $Id: equiv.boot.Rd,v 1.5 2006/09/07 01:47:22 andrewr Exp $
 
 \name{equiv.boot}
 \alias{equiv.boot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Regression-based TOST using bootstrap }
 \description{
-This function wraps the regression-based TOST equivalence test inside the
+This function wraps the regression-based TOST equivalence test inside a
 bootstrap, extracts and reports the useful quantities, and reports the
-outcome of the test.  
+outcome of the test.  The function was written for validating models. To
+use it for this purpose, pass the model predictions as the predictor
+variable, and the observations (which the predictions are intended to
+match) as the response variable.
 }
 \usage{
 equiv.boot(x, y, alpha = 0.05, b0.ii = 0.25, b1.ii = 0.25, reps = 100)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ the predictor variable }
-  \item{y}{ the response variable }
+  \item{x}{ the predictor variable (commonly predictions)}
+  \item{y}{ the response variable (commonly observations)}
   \item{alpha}{ the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
-    intercept. }
+    intercept, expressed as a proportion of the estimate. }
   \item{b1.ii}{the half-length of the region of similarity for the
-    slope.}
+    slope, expressed as a proportion of the estimate.}
   \item{reps}{ the number of bootstrap replicates required }
 }
 \details{
@@ -33,12 +36,12 @@ dissimilarity is \emph{rejected}.
   \item{n }{The effective (non-missing) sample size}
   \item{ci.b0 }{ The intercept TOST confidence interval}
   \item{rs.b0 }{ The intercept region of similarity }
-  \item{q.b0 }{ The proportions below, within, and above the intercept region of similarity }
+  \item{q.b0 }{ The proportions of simulations below, within, and above, the intercept region of similarity }
   \item{Test.b0 }{ The outcome of the test of the null hypothesis of
     dissimilarity for the intercept (Reject/Not Reject)}
   \item{ci.b1 }{ The slope TOST confidence interval}
   \item{rs.b1 }{ The slope region of similarity }
-  \item{q.b1 }{ The proportions below, within, and above the slope region of similarity }
+  \item{q.b1 }{ The proportions of simulations below, within, and above, the slope region of similarity }
   \item{Test.b1 }{ The outcome of the test of the null hypothesis of
     dissimilarity for the slope (Reject/Not Reject)}
   \item{eff.alpha} {The corrected alpha for each of the two independent tests.}
@@ -46,7 +49,7 @@ dissimilarity is \emph{rejected}.
 
 \references{  Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913 }
+burden of proof. Tree Physiology 25, 903-913. }
 
 \author{Andrew Robinson \email{A.Robinson@ms.unimelb.edu.au}}
 
