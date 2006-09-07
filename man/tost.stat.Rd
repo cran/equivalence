@@ -1,4 +1,4 @@
-% $Id: tost.stat.Rd,v 1.3 2005/09/26 07:09:43 andrewr Exp $
+% $Id: tost.stat.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
 \name{tost.stat}
 \alias{tost.stat}
@@ -8,7 +8,7 @@
  This function computes the test and key test quantities for the two
  one-sided test for equivalence, as documented in Schuirmann (1981) and
  Westlake (1981).  This function computes the test from the statistics
- of a sample of a normally-distributed population.  
+ of a sample of paired differences of a normally-distributed population.  
 }
 \usage{
 tost.stat(mean, std, n, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE)

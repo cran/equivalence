@@ -1,4 +1,4 @@
-% $Id: equiv.p.Rd,v 1.4 2005/09/26 07:09:43 andrewr Exp $
+% $Id: equiv.p.Rd,v 1.5 2006/06/15 02:33:53 andrewr Exp $
 
 \name{equiv.p}
 \alias{equiv.p}
@@ -33,11 +33,11 @@ equiv.p(x, y, alpha = 0.05)
 }
 \references{
 Robinson, A.P., and R.E. Froese. 2004. Model validation using equivalence
-tests. Ecological Modelling 176, 349--358
+tests. Ecological Modelling 176, 349--358.
   
 Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A
 regression-based equivalence test for model validation: shifting the
-burden of proof. Tree Physiology 25, 903-913
+burden of proof. Tree Physiology 25, 903-913.
 }
 \author{Andrew Robinson \email{A.Robinson@ms.unimelb.edu.au}}
 

@@ -1,9 +1,9 @@
-% $Id: ptte.data.Rd,v 1.3 2005/09/26 07:09:43 andrewr Exp $
+% $Id: ptte.data.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
 \name{ptte.data}
 \alias{ptte.data}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Computes a paired t-test for equivalence from a sample of a
+\title{Computes a paired t-test for equivalence from a single sample of a
   normally-distributed population}
 \description{
  This function computes the test and key test quantities for the paired
@@ -16,7 +16,7 @@ ptte.data(x, alpha = 0.05, Epsilon = 0.25, absolute = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ sample data }
+  \item{x}{ paired differences }
   \item{alpha}{ test size }
   \item{Epsilon}{ magnitude of region of similarity }
   \item{absolute}{ choose units: absolute (TRUE) or relative to the standard
@@ -53,7 +53,7 @@ A list with the following components
 }
 \references{
 Robinson, A.P., and R.E. Froese. 2004. Model validation using equivalence
-tests. Ecological Modelling 176, 349--358
+tests. Ecological Modelling 176, 349--358.
 
 Wellek, S. 2003. Testing statistical hypotheses of equivalence.  Chapman
 and Hall/CRC.  284 pp.

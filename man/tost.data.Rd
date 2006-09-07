@@ -1,4 +1,4 @@
-% $Id: tost.data.Rd,v 1.3 2005/09/26 07:09:43 andrewr Exp $
+% $Id: tost.data.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
 \name{tost.data}
 \alias{tost.data}
@@ -7,15 +7,15 @@
 \description{
  This function computes the test and key test quantities for the two
  one-sided test for equivalence, as documented in Schuirmann (1981) and
- Westlake (1981).  This function computes the test from a sample of a
- normally-distributed population.  
+ Westlake (1981).  This function computes the test for a sample of
+ paired differences, assume to be from a normally-distributed population.  
 }
 \usage{
 tost.data(x, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ the sample }
+  \item{x}{ the sample of paired differences }
   \item{null}{ the value of the parameter in the null hypothesis }
   \item{alpha}{ test size }
   \item{Epsilon}{ magnitude of region of similarity }
@@ -46,7 +46,7 @@ a normal distribution is contained in a known interval.  Biometrics 37
 617.
 
 Robinson, A.P., and R.E. Froese. 2004. Model validation using equivalence
-tests. Ecological Modelling 176, 349--358
+tests. Ecological Modelling 176, 349--358.
 
 Wellek, S. 2003. Testing statistical hypotheses of equivalence.  Chapman
 and Hall/CRC.  284 pp.

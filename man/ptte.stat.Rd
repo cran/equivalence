@@ -1,4 +1,4 @@
-% $Id: ptte.stat.Rd,v 1.3 2005/09/26 07:09:43 andrewr Exp $
+% $Id: ptte.stat.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
 \name{ptte.stat}
 \alias{ptte.stat}
@@ -9,7 +9,7 @@
  This function computes the test and key test quantities for the paired
  t-test for equivalence, as documented in Wellek (2003, pp 77-80).  This
  function computes the test from the mean and standard deviation of a
- sample of a normally-distributed population. 
+ sample of paired differences from a normally-distributed population. 
 }
 \usage{
 ptte.stat(mean, std, n, alpha = 0.05, Epsilon = 0.25, absolute = FALSE)
@@ -56,7 +56,7 @@ discussion.
 }
 \references{
 Robinson, A.P., and R.E. Froese. 2004. Model validation using equivalence
-tests. Ecological Modelling 176, 349--358
+tests. Ecological Modelling 176, 349--358.
 
 Wellek, S. 2003. Testing statistical hypotheses of equivalence.  Chapman
 and Hall/CRC.  284 pp.
