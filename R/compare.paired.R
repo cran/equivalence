@@ -56,17 +56,17 @@ Epsilon=1, reps=50)
    }
 
    if("ptte" %in% techniques) {
-    power.ptte[i] <- mean(boot(d-mean(d, na.rm=T)+mu[i], ptte.boot, reps,
+    power.ptte[i] <- mean(boot(d-mean(d, na.rm=TRUE)+mu[i], ptte.boot, reps,
                             Epsilon=Epsilon)$t)
    }
 
    if("sign" %in% techniques) {
-    power.sign[i] <- mean(boot(d-mean(d, na.rm=T)+mu[i], sign.boot, reps,
+    power.sign[i] <- mean(boot(d-mean(d, na.rm=TRUE)+mu[i], sign.boot, reps,
                             p1=p1, p2=p2)$t)
    }
 
    if("srank" %in% techniques) {
-    power.srank[i] <- mean(boot(d-mean(d, na.rm=T)+mu[i], srank.boot, reps)$t)
+    power.srank[i] <- mean(boot(d-mean(d, na.rm=TRUE)+mu[i], srank.boot, reps)$t)
    }
 
    if("twos" %in% techniques) {
@@ -93,7 +93,7 @@ Epsilon=1, reps=50)
 
 ##### PLOT POWERS ########################################################
   maxim <- 1
-  plot( mu, power.tost, axes=F, type="n",
+  plot( mu, power.tost, axes=FALSE, type="n",
         xlab=expression(paste(mu[D])),
         ylab="Power", 
         xlim=2*c(-Epsilon.tost, Epsilon.tost), ylim=c(0, 1.1) )

@@ -1,0 +1,9 @@
+2007-11-08  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* equiv.boot.R: Fixed problem in where the wrong intervals were
+	being used for the slope; thanks to Michael Saunders for the bug
+	report.
+
+
+
+	
