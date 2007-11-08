@@ -13,8 +13,8 @@
     i.b0.u <- mean(x, na.rm=TRUE) * (1 + b0.ii)
     c.b1.l <- quantile(plot.boot$t[,8], probs=eff.alpha)
     c.b1.u <- quantile(plot.boot$t[,8], probs=1-eff.alpha)
-    i.b1.l <- 1 * (1 - b0.ii)
-    i.b1.u <- 1 * (1 + b0.ii)
+    i.b1.l <- 1 * (1 - b1.ii)
+    i.b1.u <- 1 * (1 + b1.ii)
     quantiles <- apply(plot.boot$t, 2, mean)[1:6]
     list(n = sum(complete.cases(cbind(x, y))),
          ci.b0 = c(c.b0.l, c.b0.u),
