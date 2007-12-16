@@ -1,0 +1,3 @@
+import(boot, lattice)
+export(equiv.boot, equiv.boot.lm, equiv.p, equivalence.xyplot, 
+       ptte.data, ptte.stat, tost.data, tost.stat)

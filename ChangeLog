@@ -1,3 +1,7 @@
+2007-12-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* several: Cleaned up documentation so that internal files are hidden.
+
 2007-11-08  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* equiv.boot.R: Fixed problem in where the wrong intervals were
