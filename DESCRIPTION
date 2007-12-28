@@ -1,8 +1,8 @@
 Package: equivalence
 Type: Package
 Title: Provides tests and graphics for assessing tests of equivalence
-Version: 0.4.4
-Date: 2007-12-16
+Version: 0.5.0
+Date: 2007-12-28
 Author: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
 Maintainer: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
 Depends: lattice, boot, grid
@@ -11,4 +11,4 @@ Description: This package provides some statistical tests and graphics
         as the alternative hypothesis instead of the null.  Sample
         datasets are included.
 License: GPL-2
-Packaged: Sun Dec 16 18:25:20 2007; andrewr
+Packaged: Sat Dec 29 14:56:02 2007; andrewr

@@ -1,44 +1,46 @@
 % $Id: tost.data.Rd,v 1.4 2006/06/15 02:33:53 andrewr Exp $
 
-\name{tost.data}
-\alias{tost.data}
+\name{tost}
+\alias{tost}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Computes a TOST for equivalence from a sample}
+\title{Computes a TOST for equivalence from paired or unpaired data}
 \description{
  This function computes the test and key test quantities for the two
  one-sided test for equivalence, as documented in Schuirmann (1981) and
  Westlake (1981).  This function computes the test for a sample of
- paired differences, assume to be from a normally-distributed population.  
+ paired differences or two samples, assumed to be from a
+ normally-distributed population.  
 }
 \usage{
-tost.data(x, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE)
+tost(x, y = NULL, alpha = 0.05, epsilon, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ the sample of paired differences }
-  \item{null}{ the value of the parameter in the null hypothesis }
+  \item{x}{ the first (or only) sample }
+  \item{y}{ the second sample }
   \item{alpha}{ test size }
-  \item{Epsilon}{ magnitude of region of similarity }
-  \item{absolute}{ choose units: absolute (TRUE) or relative to the standard
-    deviation (FALSE). } 
+  \item{epsilon}{ magnitude of region of similarity }
+  \item{...}{ arguments to be passed to \code{t.test()} } 
 }
 \details{This test requires the assumption of normality of the
-  population.  Wellek (2003) suggests that 0.36 corresponds to a strict
-  test and 0.72 to a liberal test when epsilon is in units of relative
-  standard deviation.  I have added the option to use an absolute
-  interval (e.g. +/- 1 metre), which simply converts the cutoff to units
-  of the sample standard deviation and applies the usual test. 
+  population, or an invocation of large-sample theory.  The function
+  wraps around the \code{t.test()} function, so it provides tosts for
+  the same range of designs, accepts the same arguments, and handles
+  missing values the same way.
 }
 \value{
   A list with the following components
-  \item{Dissimilarity }{the outcome of the test of the null hypothesis
-    of dissimilarity}
-  \item{Mean }{the mean of the sample}
-  \item{StdDev }{the standard deviation of the sample}
-  \item{n }{the non-missing sample size}
+  \item{mean.diff }{the mean of the difference}
+  \item{se.diff }{the standard error of the difference}
   \item{alpha }{the size of the test}
-  \item{Epsilon }{the magnitude of the region of similarity}
-  \item{Interval }{the half-length of the two one-sided interval}
+  \item{ci.diff }{the 1-alpha confidence interval for the difference}
+  \item{df }{the degrees of freedom used for the confidence interval}
+  \item{epsilon }{the magnitude of the region of similarity}
+  \item{result }{the outcome of the test of the null hypothesis
+    of dissimilarity}
+  \item{p.value }{the p-value of the significance test}
+  \item{check.me }{the confidence interval corresponding to the p-value}
+
 }
 \references{
 Schuirmann, D.L. 1981. On hypothesis testing to determine if the mean of
@@ -64,6 +66,6 @@ Westlake, W.J. 1981. Response to T.B.L. Kirkwood: bioequivalence testing
 \seealso{ \code{\link{tost.stat}}, \code{\link{ptte.data}} }
 \examples{
 data(ufc)
-tost.data(ufc$Height.m.p - ufc$Height.m)
+tost(ufc$Height.m.p, ufc$Height.m, epsilon = 1)
 }
 \keyword{ htest }% at least one, from doc/KEYWORDS

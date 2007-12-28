@@ -1,3 +1,10 @@
+2007-12-28  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* tost.R: The tost.data() function has been deprecated.  Please
+	use tost, which relies in the t.test() function and its civilized
+	apparatus.  The advantage is that we now accommodate pooled,
+	unpooled, and paired data in the one function.
+
 2007-12-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* several: Cleaned up documentation so that internal files are hidden.
