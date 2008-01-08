@@ -1,10 +1,9 @@
 # $Id: tost.stat.R,v 1.2 2005/09/26 02:29:00 andrewr Exp $
 
 "tost.stat" <-
-function(mean, std, n, null=0, alpha=0.05, Epsilon=0.36, absolute=FALSE) {
+function(mean, std, n, null=0, alpha=0.05, Epsilon=0.36) {
     df = n-1
     if(length(Epsilon)>1) stop("Asymmetric intervals are not yet implemented")
-    if (!absolute) Epsilon <- Epsilon * std
     tint <- (std/sqrt(n)) * qt(1-alpha, df)
     if ((mean - null + tint) < Epsilon & (mean + null - tint) > -Epsilon)
       result <- "rejected"

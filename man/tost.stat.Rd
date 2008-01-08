@@ -11,7 +11,7 @@
  of a sample of paired differences of a normally-distributed population.  
 }
 \usage{
-tost.stat(mean, std, n, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE)
+tost.stat(mean, std, n, null = 0, alpha = 0.05, Epsilon = 0.36)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,15 +21,9 @@ tost.stat(mean, std, n, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE
   \item{null}{ the value of the parameter in the null hypothesis }
   \item{alpha}{ test size }
   \item{Epsilon}{ magnitude of region of similarity }
-  \item{absolute}{ choose units: absolute (TRUE) or relative to the standard
-    deviation (FALSE). } 
 }
 \details{This test requires the assumption of normality of the
-  population.  Wellek (2003, p. 12) suggests that 0.36 corresponds to a
-  strict test and 0.72 to a liberal  test when epsilon is in units of
-  relative standard deviation.  I have added the option to use an
-  absolute interval (e.g. +/- 1 metre), which simply converts the cutoff
-  to units of the sample standard deviation and applies the usual test.
+  population. 
 }
 \value{
   A list with the following components

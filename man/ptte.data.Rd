@@ -12,28 +12,23 @@
  population. 
 }
 \usage{
-ptte.data(x, alpha = 0.05, Epsilon = 0.25, absolute = FALSE)
+ptte.data(x, alpha = 0.05, Epsilon = 0.25)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ paired differences }
   \item{alpha}{ test size }
   \item{Epsilon}{ magnitude of region of similarity }
-  \item{absolute}{ choose units: absolute (TRUE) or relative to the standard
-    deviation (FALSE). } 
 }
 \details{
-This test requires the assumption of normality of the
-  population.  Under that assumption the test is the uniformly most powerful
-  invariant test (Wellek, 2003, pp. 78-79).
+  
+This test requires the assumption of normality of the population.  Under
+  that assumption the test is the uniformly most powerful invariant test
+  (Wellek, 2003, pp. 78-79).
 
-  The function as documented by Wellek (2003) only used units relative to the
-standard deviation, noting (p. 12) that 0.25 corresponds to a strict
-test and 0.5 to a liberal test.  I have added the option to use an
-absolute interval (e.g. +/- 1 metre), which simply converts the cutoff
-to units of the sample standard deviation and applies the usual test.
-It's a hack, it lacks theoretical justification, and it's open to
-discussion. 
+  The function as documented by Wellek (2003) uses units relative
+to the standard deviation, noting (p. 12) that 0.25 corresponds to a
+strict test and 0.5 to a liberal test. 
  
 }
 \value{

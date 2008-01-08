@@ -2,26 +2,27 @@
 
 \name{equivalence.xyplot}
 \alias{equivalence.xyplot}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{Constructs graphical regression-based tests of equivalence inside
-a lattice coplot }
-\description{
- Implements regression-based tests of equivalence within lattice
- graphics. 
-}
-\usage{
-equivalence.xyplot(formula, alpha, b0.ii, b1.ii, ...)
-}
-%- maybe also 'usage' for other objects documented here.
+a lattice coplot}
+
+\description{ Implements regression-based tests of equivalence within
+  lattice graphics.}
+
+\usage{ equivalence.xyplot(formula, alpha, b0.ii, b1.ii,
+add.smooth=FALSE, b0.absolute=FALSE, ...)  }
+
 \arguments{
   \item{formula}{a formula describing the form of conditioning plot. See
-  the manual entry for xyplot for more details.}
+  the manual entry for \code{xyplot()} for more details.}
   \item{alpha}{ the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
-    intercept. }
+    intercept, can be relative or absolute (see below). }
   \item{b1.ii}{the half-length of the region of similarity for the
     slope.}
-  \item{...}{ extra arguments passed on to xyplot() }
+  \item{add.smooth}{adds a loess smooth to the graph.}
+  \item{b0.absolute}{is b0.ii in absolute or relative units?}
+  \item{...}{ extra arguments passed on to \code{xyplot()} }
 }
 
 \details{
@@ -108,7 +109,7 @@ burden of proof. Tree Physiology 25, 903-913. }
 
 data(pref.4PG)
 equivalence.xyplot(pref.4PG$stemvolinc ~ pref.4PG$volinc4PG,
-                   alpha=0.05, b0.ii=0.25, b1.ii=0.25,
+                   alpha=0.05, b0.ii=0.25, b1.ii=0.25, add.smooth=TRUE, 
                    xlab=expression(paste("4PG decadal volume growth (", m^3,
                        ha^-1, decade^-1, ")", sep="")), 
                    ylab=expression(paste("Measured decadal volume growth (",
