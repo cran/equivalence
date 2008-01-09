@@ -12,7 +12,7 @@
  sample of paired differences from a normally-distributed population. 
 }
 \usage{
-ptte.stat(mean, std, n, alpha = 0.05, Epsilon = 0.25, absolute = FALSE)
+ptte.stat(mean, std, n, alpha = 0.05, Epsilon = 0.25)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,8 +21,6 @@ ptte.stat(mean, std, n, alpha = 0.05, Epsilon = 0.25, absolute = FALSE)
   \item{n}{ sample size }
   \item{alpha}{ test size }
   \item{Epsilon}{ magnitude of region of similarity }
-  \item{absolute}{ choose units: absolute (TRUE) or relative to the standard
-    deviation (FALSE). }
 }
 \details{
 This test requires the assumption of normality of the
@@ -32,13 +30,9 @@ This test requires the assumption of normality of the
   mean, standard deviation, and sample size, and are confident that the
   sample is drawn from a normally-distributed population.
 
-The function as documented by Wellek (2003) only used units relative to the
+The function as documented by Wellek (2003) uses units relative to the
 standard deviation, noting (p. 12) that 0.25 corresponds to a strict
-test and 0.5 to a liberal test.  I have added the option to use an
-absolute interval (e.g. +/- 1 metre), which simply converts the cutoff
-to units of the sample standard deviation and applies the usual test.
-It's a hack, it lacks theoretical justification, and it's open to
-discussion. 
+test and 0.5 to a liberal test. 
 }
 \value{
   A list with the following components

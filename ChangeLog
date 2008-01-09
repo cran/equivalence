@@ -1,3 +1,20 @@
+2008-01-08  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* equivalence.xyplot.R: corrected the computation of the
+	confidence interval of the intercept.  Previously the interval was
+	computed too high.  Added options to add a smooth to the plot to
+	aid interpretation, and to specify absolute or relative (to the
+	estimated mean) intervals for the intercept.
+
+	* ptte.data.R: this test no longer allows for absolute intervals
+	of indifference.  Use tost for such tests.
+
+	* ptte.stat.R: this test no longer allows for absolute intervals
+	of indifference.  Use tost.stat for such tests.
+
+	* tost.stat.R: this test no longer allows for relative intervals
+	of indifference.  Use ptte.stat for such tests.
+
 2007-12-28  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* tost.R: The tost.data() function has been deprecated.  Please
