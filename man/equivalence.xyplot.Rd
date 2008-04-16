@@ -103,7 +103,7 @@ burden of proof. Tree Physiology 25, 903-913. }
   very useful for this function.}
 
 \seealso{\code{\link{tost.stat}}, \code{\link{xyplot}},
-  \code{\link{equiv.boot.lm}}}
+  \code{\link{equiv.boot}}}
 
 \examples{
 
