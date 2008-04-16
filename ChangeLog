@@ -1,4 +1,24 @@
+2008-04-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.3
+
+	* equiv.boot.R: Explicitly checks that x and y are of equal length
+	and stops if not.
+
+2008-01-10  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.2
+
+	* equiv.boot.lm.R: this function is now hidden from the user
+	because people were using it instead of equiv.boot(), its wrapper.
+
+	* equiv.boot.R: now provides an argument to express the interval
+	of indifference for the intercept in the same units as the
+	intercept.
+
 2008-01-08  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.1
 
 	* equivalence.xyplot.R: corrected the computation of the
 	confidence interval of the intercept.  Previously the interval was
@@ -7,15 +27,17 @@
 	estimated mean) intervals for the intercept.
 
 	* ptte.data.R: this test no longer allows for absolute intervals
-	of indifference.  Use tost for such tests.
+	of indifference.  Use tost() for such tests.
 
 	* ptte.stat.R: this test no longer allows for absolute intervals
-	of indifference.  Use tost.stat for such tests.
+	of indifference.  Use tost.stat() for such tests.
 
 	* tost.stat.R: this test no longer allows for relative intervals
-	of indifference.  Use ptte.stat for such tests.
+	of indifference.  Use ptte.stat() for such tests.
 
 2007-12-28  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.0
 
 	* tost.R: The tost.data() function has been deprecated.  Please
 	use tost, which relies in the t.test() function and its civilized
@@ -24,9 +46,13 @@
 
 2007-12-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
+	* Version: 0.4.4
+
 	* several: Cleaned up documentation so that internal files are hidden.
 
 2007-11-08  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.4.3
 
 	* equiv.boot.R: Fixed problem in where the wrong intervals were
 	being used for the slope; thanks to Michael Saunders for the bug

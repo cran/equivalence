@@ -7,13 +7,15 @@
 \description{
 This function wraps the regression-based TOST equivalence test inside a
 bootstrap, extracts and reports the useful quantities, and reports the
-outcome of the test.  The function was written for validating models. To
+outcome of the test.  The function was written for validating models,
+and requires paired data points.  To
 use it for this purpose, pass the model predictions as the predictor
 variable, and the observations (which the predictions are intended to
-match) as the response variable.
+match) as the response variable. 
 }
 \usage{
-equiv.boot(x, y, alpha = 0.05, b0.ii = 0.25, b1.ii = 0.25, reps = 100)
+equiv.boot(x, y, alpha = 0.05, b0.ii = 0.25, b1.ii = 0.25, reps = 100,
+            b0.ii.absolute = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,10 +23,13 @@ equiv.boot(x, y, alpha = 0.05, b0.ii = 0.25, b1.ii = 0.25, reps = 100)
   \item{y}{ the response variable (commonly observations)}
   \item{alpha}{ the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
-    intercept, expressed as a proportion of the estimate. }
+    intercept, expressed as a proportion of the estimate or in the same
+    units as the estimate (see b0.ii.absolute). }
   \item{b1.ii}{the half-length of the region of similarity for the
     slope, expressed as a proportion of the estimate.}
   \item{reps}{ the number of bootstrap replicates required }
+  \item{b0.ii.absolute}{ option to express b0.ii in the same units as
+    the estimate of the intercept. }
 }
 \details{
 In each case, if the two one-sided confidence
@@ -56,7 +61,7 @@ burden of proof. Tree Physiology 25, 903-913. }
 \section{Acknowledgements}{Feedback from Mohammad Al-Ahmadi has been
   very useful for this function.}
 
-\seealso{ \code{\link{lm}}, \code{\link{boot}}, \code{\link{equiv.boot.lm}} }
+\seealso{ \code{\link{lm}}, \code{\link{boot}}, \code{\link{tost}}}
 
 \examples{
 

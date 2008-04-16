@@ -1,16 +1,23 @@
 # $Id: equiv.boot.R,v 1.3 2005/10/10 10:14:43 andrewr Exp $
 
 "equiv.boot" <-
-  function(x, y, alpha=0.05, b0.ii=0.25, b1.ii=0.25, reps=100) {
+  function(x, y, alpha=0.05, b0.ii=0.25, b1.ii=0.25, reps=100,
+            b0.ii.absolute = FALSE) {
+    if (!(length(x) == length(y))) stop ("Data must be paired.") 
     plot.boot <- boot(cbind(y, x),
                       equiv.boot.lm,
                       R=reps,
-                      rel.int.int=b0.ii, rel.int.slope=b1.ii)
+                      rel.int.int=b0.ii, rel.int.slope=b1.ii,
+                    b0.ii.absolute = b0.ii.absolute)
     eff.alpha <- 1 - sqrt(1-alpha)
     c.b0.l <- quantile(plot.boot$t[,7], probs=eff.alpha)
     c.b0.u <- quantile(plot.boot$t[,7], probs=1-eff.alpha)
-    i.b0.l <- mean(x, na.rm=TRUE) * (1 - b0.ii)
-    i.b0.u <- mean(x, na.rm=TRUE) * (1 + b0.ii)
+    i.b0.l <- ifelse(b0.ii.absolute,
+                     mean(x, na.rm = TRUE) - b0.ii,
+                     mean(x, na.rm = TRUE) * (1 - b0.ii))
+    i.b0.u <- ifelse(b0.ii.absolute,
+                     mean(x, na.rm = TRUE) + b0.ii,
+                     mean(x, na.rm = TRUE) * (1 + b0.ii))
     c.b1.l <- quantile(plot.boot$t[,8], probs=eff.alpha)
     c.b1.u <- quantile(plot.boot$t[,8], probs=1-eff.alpha)
     i.b1.l <- 1 * (1 - b1.ii)
