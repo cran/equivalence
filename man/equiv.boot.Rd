@@ -19,15 +19,15 @@ equiv.boot(x, y, alpha = 0.05, b0.ii = 0.25, b1.ii = 0.25, reps = 100,
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ the predictor variable (commonly predictions)}
-  \item{y}{ the response variable (commonly observations)}
-  \item{alpha}{ the size of the test }
+  \item{x}{the predictor variable (commonly predictions)}
+  \item{y}{the response variable (commonly observations)}
+  \item{alpha}{the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
     intercept, expressed as a proportion of the estimate or in the same
     units as the estimate (see b0.ii.absolute). }
   \item{b1.ii}{the half-length of the region of similarity for the
     slope, expressed as a proportion of the estimate.}
-  \item{reps}{ the number of bootstrap replicates required }
+  \item{reps}{the number of bootstrap replicates required }
   \item{b0.ii.absolute}{ option to express b0.ii in the same units as
     the estimate of the intercept. }
 }
@@ -38,18 +38,18 @@ dissimilarity is \emph{rejected}.
 }
 \value{
   A list of length 10, comprising
-  \item{n }{The effective (non-missing) sample size}
-  \item{ci.b0 }{ The intercept TOST confidence interval}
-  \item{rs.b0 }{ The intercept region of similarity }
-  \item{q.b0 }{ The proportions of simulations below, within, and above, the intercept region of similarity }
-  \item{Test.b0 }{ The outcome of the test of the null hypothesis of
+  \item{n}{The effective (non-missing) sample size}
+  \item{ci.b0}{The intercept TOST confidence interval}
+  \item{rs.b0}{The intercept region of similarity }
+  \item{q.b0}{The proportions of simulations below, within, and above, the intercept region of similarity }
+  \item{Test.b0}{The outcome of the test of the null hypothesis of
     dissimilarity for the intercept (Reject/Not Reject)}
-  \item{ci.b1 }{ The slope TOST confidence interval}
-  \item{rs.b1 }{ The slope region of similarity }
-  \item{q.b1 }{ The proportions of simulations below, within, and above, the slope region of similarity }
-  \item{Test.b1 }{ The outcome of the test of the null hypothesis of
+  \item{ci.b1}{The slope TOST confidence interval}
+  \item{rs.b1}{The slope region of similarity }
+  \item{q.b1}{The proportions of simulations below, within, and above, the slope region of similarity }
+  \item{Test.b1}{The outcome of the test of the null hypothesis of
     dissimilarity for the slope (Reject/Not Reject)}
-  \item{eff.alpha} {The corrected alpha for each of the two independent tests.}
+  \item{eff.alpha}{The corrected alpha for each of the two independent tests.}
 }
 
 \references{  Robinson, A.P., R.A. Duursma, and J.D. Marshall. 2005. A

@@ -14,17 +14,17 @@ inventory was based on variable radius plots with 6.43 sq. m. per ha. BAF
 \format{
   A data frame with 633 observations on the following 12 variables.
   \describe{
-    \item{\code{Plot}}{plot label}
-    \item{\code{Tree}}{tree label}
-    \item{\code{Species}}{species code}
-    \item{\code{Dbh}}{tree diameter at 1.37 m. from the ground, measured
+    \item{Plot}{plot label}
+    \item{Tree}{tree label}
+    \item{Species}{species kbd}
+    \item{Dbh}{tree diameter at 1.37 m. from the ground, measured
       in millimetres. }
-    \item{\code{Height}}{tree height measured in decimetres}
-    \item{\code{Height.ft}}{tree height converted to feet}
-    \item{\code{Dbh.in}}{tree diameter converted to inches}
-    \item{\code{Height.ft.p}}{predicted tree height in feet}
-    \item{\code{Height.m}}{tree height in metres}
-    \item{\code{Height.m.p}}{predicted tree height in metres}
+    \item{Height}{tree height measured in decimetres}
+    \item{Height.ft}{tree height converted to feet}
+    \item{Dbh.in}{tree diameter converted to inches}
+    \item{Height.ft.p}{predicted tree height in feet}
+    \item{Height.m}{tree height in metres}
+    \item{Height.m.p}{predicted tree height in metres}
   }
 }
 \details{
