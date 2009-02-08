@@ -14,7 +14,7 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
 
 \arguments{
   \item{formula}{a formula describing the form of conditioning plot. See
-  the manual entry for \code{xyplot()} for more details.}
+  the manual entry for \code{\link{xyplot}} for more details.}
   \item{alpha}{ the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
     intercept, can be relative or absolute (see below). }
@@ -22,7 +22,7 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
     slope.}
   \item{add.smooth}{adds a loess smooth to the graph.}
   \item{b0.absolute}{is b0.ii in absolute or relative units?}
-  \item{...}{ extra arguments passed on to \code{xyplot()} }
+  \item{...}{ extra arguments passed on to \kbd{xyplot} }
 }
 
 \details{
@@ -30,39 +30,43 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
  al. (2005) as a visual summary of the regression-based TOST.  At first
  glance the graph will look messy; interpretation eases with practice.  The
  following points should be noted.
- 
-\item{LS line:}{A black, solid line of best fit is added.}
-\item{Mean:}{A grey vertical bar indicates $\bar x$ and the TOST confidence
-  interval for the intercept.}
-\item{b0 R.S.:}{A shaded polygon is the region of
-  similarity of the intercept, to test the model bias.  }
-\item{Test b0:}{If the grey vertical bar is within the shaded polygon
-    then reject the null hypothesis of dissimilarity. This is a test of
-  \emph{bias}.} 
-\item{...1 -}{If the \emph{region} is too low then the predictions are
-  too low. }
-\item{...2 -}{If the \emph{region} is too high then the predictions are
-  too high. }
-\item{...3 -}{If the \emph{region} is too narrow then the predictions are
-  too variable. }
-\item{b1 C.I.:}{A black vertical bar undermeath the grey bar represents a confidence
-  interval for the slope of the line of best fit.}
-\item{b1 R.S.:}{Two black dashed lines are added representing the region of
-  similarity.}
-\item{Test b1:}{If the black bar is within the angle
-    described by the dashed black lines then the slope of the
-    observed/predicted regression is significantly similar to 1. This
-    is a test of \emph{proportionality}.}
-\item{...1 -}{If the \emph{bar} is too high then the slope is too high; the
-  model over-predicts the higher observations and under-predicts the
-  lower observations.}
-\item{...2 -}{If the \emph{bar} is too low then the slope is too low; the
-  model underpredicts the higher observations and overpredicts the
-  lower observations (analogous to regression to the mean).}
-\item{...3 -}{If the \emph{region} is too narrow then the predictions are too
-  variable.}
 
-The implementation in Robinson et al (2005) required shifting so that
+ \itemize{
+   
+   \item{LS line:}{A black, solid line of best fit is added.}
+   \item{Mean:}{A grey vertical bar indicates $\bar x$ and the TOST confidence
+     interval for the intercept.}
+   \item{b0 R.S.:}{A shaded polygon is the region of
+     similarity of the intercept, to test the model bias.  }
+   \item{Test b0:}{If the grey vertical bar is within the shaded polygon
+     then reject the null hypothesis of dissimilarity. This is a test of
+     \emph{bias}.} 
+   \item{...1 -}{If the \emph{region} is too low then the predictions are
+     too low. }
+   \item{...2 -}{If the \emph{region} is too high then the predictions are
+     too high. }
+   \item{...3 -}{If the \emph{region} is too narrow then the predictions are
+     too variable. }
+   \item{b1 C.I.:}{A black vertical bar undermeath the grey bar represents a confidence
+     interval for the slope of the line of best fit.}
+   \item{b1 R.S.:}{Two black dashed lines are added representing the region of
+     similarity.}
+   \item{Test b1:}{If the black bar is within the angle
+     described by the dashed black lines then the slope of the
+     observed/predicted regression is significantly similar to 1. This
+     is a test of \emph{proportionality}.}
+   \item{...1 -}{If the \emph{bar} is too high then the slope is too high; the
+     model over-predicts the higher observations and under-predicts the
+     lower observations.}
+   \item{...2 -}{If the \emph{bar} is too low then the slope is too low; the
+     model underpredicts the higher observations and overpredicts the
+     lower observations (analogous to regression to the mean).}
+   \item{...3 -}{If the \emph{region} is too narrow then the predictions are too
+     variable.}
+}
+
+
+The implementation in Robinson et al. (2005) required shifting so that
 the predictor has 0 mean. This hack has been removed here so that the
 basic graph object is a plot of the two variables being compared.  }
 

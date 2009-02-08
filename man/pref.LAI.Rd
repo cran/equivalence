@@ -16,9 +16,9 @@ regression-based TOST in Robinson et al (2005).  }
   A dataset with 36 observations on 8 variables, the following two of
   which were used for the test of equivalence:
   \describe{
-    \item{\code{lai.pa}}{LAI as estimated using allometric functions
+    \item{\kbd{lai.pa}}{LAI as estimated using allometric functions
       applied to measurements of trees within the sample plot.}
-    \item{\code{lai.bl}}{LAI as estimated using the Beer-Lambert model
+    \item{\kbd{lai.bl}}{LAI as estimated using the Beer-Lambert model
       from measurements of interception using a hand-held ceptometer.}
   }
 }

@@ -1,3 +1,15 @@
+2009-01-26  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.5
+
+	* equiv.boot.Rd: removed errant space between braces.
+
+2009-01-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.4
+
+	* Rd files: replaced calls to code with verb for 2.9.x.
+
 2008-04-16  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* Version: 0.5.3

@@ -16,8 +16,8 @@ a regression-based TOST in Robinson et al (2005).
   A dataset with 35 observations on 33 variables, of which the
   following two were used for the model validation exercise.
   \describe{
-    \item{\code{stemvolinc}}{measured decadal stem growth in $m^3/ha$}
-    \item{\code{volinc4PG}}{predicted decadal stem growth in $m^3/ha$}
+    \item{\kbd{stemvolinc}}{measured decadal stem growth in $m^3/ha$}
+    \item{\kbd{volinc4PG}}{predicted decadal stem growth in $m^3/ha$}
   }
 }
 \details{ Nothing in particular.  Devil's club (\emph{Oplopanax horridus})

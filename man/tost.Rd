@@ -20,11 +20,11 @@ tost(x, y = NULL, alpha = 0.05, epsilon, ...)
   \item{y}{ the second sample }
   \item{alpha}{ test size }
   \item{epsilon}{ magnitude of region of similarity }
-  \item{...}{ arguments to be passed to \code{t.test()} } 
+  \item{...}{ arguments to be passed to \kbd{t.test} } 
 }
 \details{This test requires the assumption of normality of the
   population, or an invocation of large-sample theory.  The function
-  wraps around the \code{t.test()} function, so it provides tosts for
+  wraps around the \kbd{t.test} function, so it provides tosts for
   the same range of designs, accepts the same arguments, and handles
   missing values the same way.
 }

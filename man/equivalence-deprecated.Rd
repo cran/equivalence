@@ -26,7 +26,7 @@ tost.data(x, null = 0, alpha = 0.05, Epsilon = 0.36, absolute = FALSE)
   Functions in packages other than the base package are listed in
   \code{help("pkg-deprecated")}.
 
-  \code{tost.data} is superceded by \code{\link{tost}}.
+  \kbd{tost.data} is superceded by \code{\link{tost}}.
 }
 \seealso{
   \code{\link{Deprecated}}

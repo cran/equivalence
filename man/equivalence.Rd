@@ -6,8 +6,8 @@
   This package provides tools to perform several equivalence tests.
 }
 
-\note{Recent changes: the \code{tost.data} function is deprecated as of
-  version 0.5.0; please use \code{tost}, which provides more
+\note{Recent changes: the \kbd{tost.data} function is deprecated as of
+  version 0.5.0; please use \kbd{tost}, which provides more
   functionality.}
 
 \examples{
