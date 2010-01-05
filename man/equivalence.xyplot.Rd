@@ -34,7 +34,7 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
  \itemize{
    
    \item{LS line:}{A black, solid line of best fit is added.}
-   \item{Mean:}{A grey vertical bar indicates $\bar x$ and the TOST confidence
+   \item{Mean:}{A grey vertical bar indicates the mean of x and the TOST confidence
      interval for the intercept.}
    \item{b0 R.S.:}{A shaded polygon is the region of
      similarity of the intercept, to test the model bias.  }

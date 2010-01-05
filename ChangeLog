@@ -1,3 +1,9 @@
+2010-01-05  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
+
+	* Version: 0.5.6
+
+	* equivalence.xyplot.Rd: removed unknown macro '\bar'.
+
 2009-01-26  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* Version: 0.5.5
