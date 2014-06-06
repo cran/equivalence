@@ -1,3 +1,15 @@
+2014-06-02  Gregory Belenky <belenky@wsu.edu>
+
+	* Version: 0.6.0
+
+	* General: Added new robust equivalence test.
+
+2013-10-24  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
+
+	* Version: 0.5.7
+
+	* General: updated for compatibility.
+
 2010-01-05  Andrew Robinson  <andrewr@mu.ms.unimelb.edu.au>
 
 	* Version: 0.5.6

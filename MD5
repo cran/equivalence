@@ -1,6 +1,6 @@
-53024f79bd02cb4b8a57d4b7217d29bd *ChangeLog
-7d41173598caf321c6128024670cc670 *DESCRIPTION
-f1dbf6d2a7cc6c00d0c625a8f335cfde *NAMESPACE
+8809bdb9daec74190fd7e88c3d29f266 *ChangeLog
+b9bcd6399bf331c238d816e67f552e0c *DESCRIPTION
+25179d18e53b910d44ce9d3c48d12366 *NAMESPACE
 040c398a4fe1e364f96d6ceedb4a48e2 *R/Deprecated.R
 be37eff92ddb4251e417847d24062d9f *R/Ucutoff.R
 f5ecb124092be772b45c845c274a9105 *R/Ustatistic.R
@@ -23,6 +23,7 @@ f541e13b930a1fc5e5e4d5d412f69ed3 *R/mwhit.boot.R
 9a1b3c09caf312a1fd05f9691781d3ef *R/ptte.boot.R
 fe9ab657245e20683a80e9ba7fe3fc08 *R/ptte.data.R
 c6c967ddefbeb08bd64c32c4b177a34a *R/ptte.stat.R
+d9f785c7d4262b618c60994d03fa7d2a *R/rtost.R
 3b50e7227ec741039d58febe46fed7b1 *R/sign.boot.R
 b7f1bbebd2547f45060022d59b0abe44 *R/srank.boot.R
 7cb388871aff58657b54a269a9bd800e *R/tost.R
@@ -30,9 +31,9 @@ b7f1bbebd2547f45060022d59b0abe44 *R/srank.boot.R
 2cd84bae53bb7fa999d77413b6d722da *R/tost.stat.R
 67f7ee768abb5bf14c0b5f531a2ded5f *R/twos.boot.R
 73f9e8a973b017c0c1d4de7eb72065c6 *R/zzz.R
-ad78e65942f95045e1f95e223e6aa7ae *data/pref.4PG.rda
-8b4f64933769f2e853d25f2835db6e18 *data/pref.LAI.rda
-4e7f5bfe15a644970a93eeae738cca3e *data/ufc.rda
+435bdd085b5b44578acf2ec22f25bdbd *data/pref.4PG.rda
+caff695ca87fdf5ff8935f21aab7bb37 *data/pref.LAI.rda
+72e41335f9832ada62c1e42add0bc5f0 *data/ufc.rda
 5f2dff57f38ce1a39354f8258475510b *man/equiv.boot.Rd
 4a52f931b2506878b882347c63cea56e *man/equiv.p.Rd
 eeb3d46c1959aa2e9d2030bdb14afb3b *man/equivalence-deprecated.Rd
@@ -42,6 +43,7 @@ eeb3d46c1959aa2e9d2030bdb14afb3b *man/equivalence-deprecated.Rd
 4befdf520a80ab89eb62cd61c3385569 *man/pref.LAI.Rd
 697501040bc34e49357d4c291e30528a *man/ptte.data.Rd
 f522ddafe74661338fb9cfcc64d9d3ec *man/ptte.stat.Rd
+4b5196bc1be8214ba20d8aa8f448667d *man/rtost.Rd
 26a8b07b2ce25e75e20ebdbe4139a3fc *man/tost.Rd
 2b018cafd89e4c303ee274f31fa36282 *man/tost.stat.Rd
 dfd63d220f2ec985873c8508682f6b67 *man/ufc.Rd
