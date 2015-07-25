@@ -1,3 +1,18 @@
+2015-**-**  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
+
+	* Version: 0.7
+
+	* General: Deprecated relative intercept TOST in
+	equivalence.xyplot. Corrected reported CI in tost documentation
+	reported by Dr. Beate Kruger.
+
+2014-10-21  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
+
+	* Version: 0.6.1
+
+	* General: Corrected error in tost.stat, pointed out by Tingting
+	Zhan.
+
 2014-06-02  Gregory Belenky <belenky@wsu.edu>
 
 	* Version: 0.6.0

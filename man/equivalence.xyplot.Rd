@@ -61,10 +61,9 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
    \item{...2 -}{If the \emph{bar} is too low then the slope is too low; the
      model underpredicts the higher observations and overpredicts the
      lower observations (analogous to regression to the mean).}
-   \item{...3 -}{If the \emph{region} is too narrow then the predictions are too
+   \item{...3 -}{If the \emph{bar} is too narrow then the predictions are too
      variable.}
 }
-
 
 The implementation in Robinson et al. (2005) required shifting so that
 the predictor has 0 mean. This hack has been removed here so that the

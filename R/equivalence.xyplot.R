@@ -8,6 +8,7 @@
              add.smooth = FALSE,
              b0.absolute = FALSE,
              ...) {
+      if (!b0.absolute) cat("Using b0.absolute = FALSE is deprecated and the argument will disappear in a future version.\n")
       bg <- trellis.par.get("background")
       bg$col <- "white"
       trellis.par.set("background", bg)

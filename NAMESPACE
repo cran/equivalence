@@ -1,3 +1,10 @@
-import(boot, lattice, PairedData)
+import(boot, lattice, PairedData, grid)
 export(equiv.boot, equiv.p, equivalence.xyplot, 
        ptte.data, ptte.stat, rtost, tost, tost.data, tost.stat)
+importFrom("grDevices", "gray")
+importFrom("graphics", "abline", "axis", "box", "legend", "lines",
+           "par")
+importFrom("stats", "coef", "complete.cases", "df.residual", "lm",
+           "pbinom", "pf", "pnorm", "predict", "pt", "qbinom",
+           "qchisq", "qt", "quantile", "rbinom", "rexp", "rnorm", "sd",
+           "t.test", "uniroot", "var")

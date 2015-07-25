@@ -39,7 +39,7 @@ tost(x, y = NULL, alpha = 0.05, epsilon, ...)
   \item{result }{the outcome of the test of the null hypothesis
     of dissimilarity}
   \item{p.value }{the p-value of the significance test}
-  \item{check.me }{the confidence interval corresponding to the p-value}
+  \item{tost.interval }{the two one-sided confidence interval corresponding to the test.}
 
 }
 \references{

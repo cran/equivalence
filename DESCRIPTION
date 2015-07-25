@@ -1,17 +1,17 @@
 Package: equivalence
 Type: Package
-Title: Provides tests and graphics for assessing tests of equivalence
-Version: 0.6.0
-Date: 2014-06-02
+Title: Provides Tests and Graphics for Assessing Tests of Equivalence
+Version: 0.7.0
+Date: 2015-07-25
 Author: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
 Maintainer: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
-Depends: lattice, boot, grid, PairedData
-Description: This package provides some statistical tests and graphics
-        for assessing tests of equivalence.  Such tests have similarity
-        as the alternative hypothesis instead of the null.  Sample
-        data sets are included.
+Depends: lattice, boot, PairedData
+Imports: grid
+Description: Provides statistical tests and graphics for assessing tests
+        of equivalence.  Such tests have similarity as the alternative
+	hypothesis instead of the null.  Sample data sets are included.
 License: GPL-2
-Packaged: 2014-06-06 04:44:19 UTC; andrewpr
 NeedsCompilation: yes
+Packaged: 2015-07-25 03:53:24 UTC; andrewpr
 Repository: CRAN
-Date/Publication: 2014-06-06 07:40:18
+Date/Publication: 2015-07-25 11:34:14
