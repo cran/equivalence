@@ -9,36 +9,63 @@
  one-sided test for equivalence, as documented in Schuirmann (1981) and
  Westlake (1981).  This function computes the test for a sample of
  paired differences or two samples, assumed to be from a
- normally-distributed population.  
+ normally-distributed population.
 }
 \usage{
-tost(x, y = NULL, alpha = 0.05, epsilon, ...)
+tost(x, y = NULL, epsilon = 1, paired = FALSE, var.equal = FALSE,
+              conf.level = 0.95, alpha = NULL,
+    ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ the first (or only) sample }
   \item{y}{ the second sample }
-  \item{alpha}{ test size }
   \item{epsilon}{ magnitude of region of similarity }
-  \item{...}{ arguments to be passed to \kbd{t.test} } 
+  \item{paired}{  a logical indicating whether you want a paired tost }
+  \item{var.equal}{  a logical variable indicating whether to treat the two
+          variances as being equal. If 'TRUE' then the pooled variance
+          is used to estimate the variance otherwise the Welch (or
+          Satterthwaite) approximation to the degrees of freedom is
+          used.}
+  \item{conf.level}{ confidence level of the interval }
+  \item{alpha}{ test size (for backwards-compatibility, overrides conf.level)}
+  \item{...}{ arguments to be passed to other functions. }
 }
-\details{This test requires the assumption of normality of the
+\details{ The function inherits infrastructure from R's t.test.default,
+  so a number of elements have been copied from the help file of that function.
+
+  This test requires the assumption of normality of the
   population, or an invocation of large-sample theory.  The function
   wraps around the \kbd{t.test} function, so it provides tosts for
   the same range of designs, accepts the same arguments, and handles
   missing values the same way.
+
+   If 'paired' is 'TRUE' then both 'x' and 'y' must be specified and
+     they must be the same length.  Missing values are silently removed
+     (in pairs if 'paired' is 'TRUE').  If 'var.equal' is 'TRUE' then
+     the pooled estimate of the variance is used.  By default, if
+     'var.equal' is 'FALSE' then the variance is estimated separately
+     for both groups and the Welch modification to the degrees of
+     freedom is used.
+
 }
 \value{
   A list with the following components
-  \item{mean.diff }{the mean of the difference}
+  \item{estimate }{the mean of the difference}
   \item{se.diff }{the standard error of the difference}
   \item{alpha }{the size of the test}
+  \item{data.name}{a character string giving the name(s) of the data}
   \item{ci.diff }{the 1-alpha confidence interval for the difference}
-  \item{df }{the degrees of freedom used for the confidence interval}
+  \item{parameter }{the degrees of freedom used for the confidence interval}
   \item{epsilon }{the magnitude of the region of similarity}
   \item{result }{the outcome of the test of the null hypothesis
     of dissimilarity}
-  \item{p.value }{the p-value of the significance test}
+  \item{method}{a character string indicating what type of t-test was
+          performed}
+  \item{null.value }{the specified hypothesized value of the mean or mean
+          difference depending on whether it was a one-sample tost or a
+          two-sample tost.}
+  \item{tost.p.value }{the p-value of the tost significance test}
   \item{tost.interval }{the two one-sided confidence interval corresponding to the test.}
 
 }
@@ -66,6 +93,6 @@ Westlake, W.J. 1981. Response to T.B.L. Kirkwood: bioequivalence testing
 \seealso{ \code{\link{tost.stat}}, \code{\link{ptte.data}} }
 \examples{
 data(ufc)
-tost(ufc$Height.m.p, ufc$Height.m, epsilon = 1)
+tost(ufc$Height.m.p, ufc$Height.m, epsilon = 1, paired = TRUE)
 }
 \keyword{ htest }% at least one, from doc/KEYWORDS

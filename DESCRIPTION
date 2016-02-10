@@ -1,8 +1,8 @@
 Package: equivalence
 Type: Package
 Title: Provides Tests and Graphics for Assessing Tests of Equivalence
-Version: 0.7.0
-Date: 2015-07-25
+Version: 0.7.1
+Date: 2016-02-10
 Author: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
 Maintainer: Andrew Robinson <A.Robinson@ms.unimelb.edu.au>
 Depends: lattice, boot, PairedData
@@ -12,6 +12,6 @@ Description: Provides statistical tests and graphics for assessing tests
 	hypothesis instead of the null.  Sample data sets are included.
 License: GPL-2
 NeedsCompilation: yes
-Packaged: 2015-07-25 03:53:24 UTC; andrewpr
+Packaged: 2016-02-10 00:30:11 UTC; andrewpr
 Repository: CRAN
-Date/Publication: 2015-07-25 11:34:14
+Date/Publication: 2016-02-10 09:11:11
