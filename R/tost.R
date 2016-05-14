@@ -1,3 +1,5 @@
+##  Much code in the function has been copied and adapted from R's t.test.default function.
+
 tost <-
     function (x, y = NULL, epsilon = 1, paired = FALSE, var.equal = FALSE,
               conf.level = 0.95, alpha = NULL,

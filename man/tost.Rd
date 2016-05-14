@@ -7,9 +7,12 @@
 \description{
  This function computes the test and key test quantities for the two
  one-sided test for equivalence, as documented in Schuirmann (1981) and
- Westlake (1981).  This function computes the test for a sample of
+ Westlake (1981).  The function computes the test for a sample of
  paired differences or two samples, assumed to be from a
  normally-distributed population.
+
+ Much code in the function has been copied and adapted from R's
+ t.test.default function.
 }
 \usage{
 tost(x, y = NULL, epsilon = 1, paired = FALSE, var.equal = FALSE,

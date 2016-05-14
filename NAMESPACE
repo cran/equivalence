@@ -1,5 +1,5 @@
 import(boot, lattice, PairedData, grid)
-export(equiv.boot, equiv.p, equivalence.xyplot,
+export(equiv.boot, equiv.p, equivalence.xyplot, print.tost,
        ptte.data, ptte.stat, rtost, tost, tost.data, tost.stat)
 importFrom("grDevices", "gray")
 importFrom("graphics", "abline", "axis", "box", "legend", "lines",
@@ -8,3 +8,5 @@ importFrom("stats", "coef", "complete.cases", "df.residual", "lm",
            "pbinom", "pf", "pnorm", "predict", "pt", "qbinom",
            "qchisq", "qt", "quantile", "rbinom", "rexp", "rnorm", "sd",
            "t.test", "uniroot", "var", "setNames")
+
+S3method(print, tost)

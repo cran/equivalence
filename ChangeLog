@@ -1,9 +1,16 @@
+2016-05-10  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
+
+	* Version: 0.7.2
+
+	* General: Fixed namespace exporting to allow printing of
+	tost. Thanks to Lee Kennedy for the bug report.
+
 2016-02-10  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
 
 	* Version: 0.7.1
 
 	* General: Corrected tost function which provided wrong
-	standard error, reported by Wenyu Su. 
+	standard error, reported by Wenyu Su.
 
 2015-07-25  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
 
