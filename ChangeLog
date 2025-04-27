@@ -1,3 +1,22 @@
+2025-04-27  Andrew Robinson  <apro@unimelb.edu.au>
+
+	* Version: 0.8.2
+
+	* Fixed formatting of documentation files
+
+2025-04-27  Andrew Robinson  <apro@unimelb.edu.au>
+
+	* Version: 0.8.1
+
+	* Fixed links in help files
+
+2018-07-23  Andrew Robinson  <apro@unimelb.edu.au>
+
+	* Version: 0.8.0
+
+	* equivalence.xyplot: corrected use of alpha.
+	* equiv.boot: corrected use of alpha.
+
 2016-05-10  Andrew Robinson  <andrewpr@ms.unimelb.edu.au>
 
 	* Version: 0.7.2

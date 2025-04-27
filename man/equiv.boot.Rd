@@ -61,7 +61,7 @@ burden of proof. Tree Physiology 25, 903-913. }
 \section{Acknowledgements}{Feedback from Mohammad Al-Ahmadi has been
   very useful for this function.}
 
-\seealso{ \code{\link{lm}}, \code{\link{boot}}, \code{\link{tost}}}
+\seealso{ \code{\link{lm}}, \code{\link[boot]{boot}}, \code{\link{tost}}}
 
 \examples{
 

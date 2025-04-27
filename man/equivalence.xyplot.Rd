@@ -14,7 +14,7 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
 
 \arguments{
   \item{formula}{a formula describing the form of conditioning plot. See
-  the manual entry for \code{\link{xyplot}} for more details.}
+  the manual entry for \code{\link[lattice]{xyplot}} for more details.}
   \item{alpha}{ the size of the test }
   \item{b0.ii}{the half-length of the region of similarity for the
     intercept, can be relative or absolute (see below). }
@@ -31,7 +31,7 @@ add.smooth=FALSE, b0.absolute=FALSE, ...)  }
  glance the graph will look messy; interpretation eases with practice.  The
  following points should be noted.
 
- \itemize{
+ \describe{
    
    \item{LS line:}{A black, solid line of best fit is added.}
    \item{Mean:}{A grey vertical bar indicates the mean of x and the TOST confidence
@@ -105,7 +105,7 @@ burden of proof. Tree Physiology 25, 903-913. }
 \section{Acknowledgements}{Feedback from Mohammad Al-Ahmadi has been
   very useful for this function.}
 
-\seealso{\code{\link{tost.stat}}, \code{\link{xyplot}},
+\seealso{\code{\link{tost.stat}}, \code{\link[lattice]{xyplot}},
   \code{\link{equiv.boot}}}
 
 \examples{

@@ -1,7 +1,7 @@
 # $Id: equivalence.xyplot.R,v 1.7 2005/10/10 10:14:43 andrewr Exp $
 
 "equivalence.xyplot" <-
-    function(formula,          
+    function(formula,
              alpha,      # The size; e.g. 0.05
              b0.ii,      # The half-length of the intercept r.s. (proportion)
              b1.ii,      # The half-length of the slope r.s. (proportion)
@@ -32,18 +32,18 @@
                      ybar.hat <- predict(the.model,
                                          newdata = data.frame(x = x.bar),
                                          se = TRUE)
-                     t.quant <-  qt(1 - alpha/2, df.residual(the.model))
+                     t.quant <-  qt(1 - alpha, df.residual(the.model))
                      panel.arrows(x.bar, ybar.hat$fit +
                                   ybar.hat$se.fit * t.quant,
                                   x.bar, ybar.hat$fit -
                                   ybar.hat$se.fit * t.quant,
                                   col = "darkgrey", length = 0.05,
                                   angle = 90, code = 3)
-                     se.slope <- coef(summary(the.model))[2, 2] 
+                     se.slope <- coef(summary(the.model))[2, 2]
                      panel.arrows(x.bar, ybar.hat$fit +
                                   se.slope * t.quant * x.bar,
                                   x.bar, ybar.hat$fit -
-                                  se.slope * t.quant * x.bar, 
+                                  se.slope * t.quant * x.bar,
                                   col = "black", length = 0.05,
                                   angle = 90, code = 3)
                      panel.abline(a = coef(summary(the.model))[1, 1],
